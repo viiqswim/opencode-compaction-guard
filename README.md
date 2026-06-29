@@ -1,5 +1,9 @@
 # opencode-compaction-guard
 
+[![CI & Publish](https://github.com/viiqswim/opencode-compaction-guard/actions/workflows/publish.yml/badge.svg)](https://github.com/viiqswim/opencode-compaction-guard/actions/workflows/publish.yml)
+[![npm version](https://img.shields.io/npm/v/opencode-compaction-guard.svg)](https://www.npmjs.com/package/opencode-compaction-guard)
+[![license: MIT](https://img.shields.io/badge/license-MIT-blue.svg)](LICENSE)
+
 An [OpenCode](https://github.com/anomalyco/opencode) plugin that **prevents** and **auto-recovers** from the error that makes a session permanently unrecoverable after auto-compaction (or after an interrupted tool call):
 
 ```
