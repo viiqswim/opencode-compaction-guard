@@ -1,0 +1,45 @@
+{
+  "name": "opencode-compaction-guard",
+  "version": "1.0.0",
+  "description": "OpenCode plugin that prevents and auto-recovers from the 'tool_use ids were found without tool_result blocks' error that makes sessions unrecoverable after auto-compaction or interrupted tool calls.",
+  "type": "module",
+  "main": "plugin/compaction-tool-pair-guard.mjs",
+  "exports": "./plugin/compaction-tool-pair-guard.mjs",
+  "files": [
+    "plugin",
+    "README.md",
+    "LICENSE"
+  ],
+  "scripts": {
+    "test": "node test/smoke.mjs"
+  },
+  "keywords": [
+    "opencode",
+    "opencode-plugin",
+    "anthropic",
+    "claude",
+    "compaction",
+    "tool_use",
+    "tool_result",
+    "bugfix",
+    "workaround"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/viiqswim/opencode-compaction-guard.git"
+  },
+  "homepage": "https://github.com/viiqswim/opencode-compaction-guard#readme",
+  "bugs": {
+    "url": "https://github.com/viiqswim/opencode-compaction-guard/issues"
+  },
+  "author": "viiqswim",
+  "license": "MIT",
+  "peerDependencies": {
+    "@opencode-ai/plugin": ">=1.3.0"
+  },
+  "peerDependenciesMeta": {
+    "@opencode-ai/plugin": {
+      "optional": true
+    }
+  }
+}
